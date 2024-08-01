@@ -1,0 +1,26 @@
+def ler_lista(nome_lista):
+    n = int(input(f"Digite a quantidade de elementos da {nome_lista}: "))
+    lista = []
+    for i in range(n):
+        elemento = int(input(f"Digite o elemento {i+1} da {nome_lista}: "))
+        lista.append(elemento)
+    return lista
+
+lista1 = ler_lista("lista 1")
+lista2 = ler_lista("lista 2")
+
+lista_combinada = []
+len_lista1 = len(lista1)
+len_lista2 = len(lista2)
+min_len = min(len_lista1, len_lista2)
+
+for i in range(min_len):
+    lista_combinada.append(lista1[i])
+    lista_combinada.append(lista2[i])
+
+if len_lista1 > len_lista2:
+    lista_combinada.extend(lista1[min_len:])
+else:
+    lista_combinada.extend(lista2[min_len:])
+
+print("Lista combinada:", lista_combinada)

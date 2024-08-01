@@ -1,0 +1,13 @@
+import random
+lista = [random.randint(-100, 100) for _ in range(20)]
+
+lista_ordenada = sorted(lista)
+indice_menor = lista.index(min(lista))
+indice_maior = lista.index(max(lista))
+
+print("Lista original:", lista)
+
+print("Lista ordenada:", lista_ordenada)
+
+print("Índice do menor valor da lista:", indice_menor)
+print("Índice do menor valor da lista:", indice_maior)

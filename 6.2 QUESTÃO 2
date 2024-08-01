@@ -1,0 +1,17 @@
+import random
+
+elementos0 = [random.randint(5, 20) for _ in range(15)]
+num_elementos = elementos0
+
+elementos1 = [random.randint(1, 10) for _ in range(15)]
+elementos = elementos1
+
+print(elementos)
+
+soma_elementos = sum(elementos)
+soma_numelementos = sum(num_elementos)
+mediaelementos = soma_numelementos / soma_elementos
+
+print(soma_elementos)
+print(soma_numelementos)
+print(mediaelementos)
