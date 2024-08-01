@@ -1,0 +1,13 @@
+genero = str(input("qual o seu genero ? M ou F "))
+idade = int(input(" qual a sua idade em anos? "))
+tempo_serviço = int(input(" quantos anos você trabalha? "))
+
+if genero == "F" and (idade >= 60 or tempo_serviço >= 30 or (idade >= 60 and tempo_serviço >= 25)):
+    print("apodenta logo")
+
+
+if genero == "M" and (idade >= 65 or tempo_serviço >= 30 or (idade >= 60 and tempo_serviço >= 25)):
+    print("apodenta logo")
+
+else:
+    print("SE FUDEU")
