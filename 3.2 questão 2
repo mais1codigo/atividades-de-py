@@ -1,0 +1,7 @@
+juliana = int(input("Digite sua idade: "))
+mary = int(input("Digite sua idade: "))
+
+if juliana >= 17 or mary >= 17:
+    print("true")
+else:
+    print("false")
