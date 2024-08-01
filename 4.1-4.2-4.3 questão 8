@@ -1,0 +1,14 @@
+expressao_total = ""
+
+valor = int(input("Digite um valor (fim): "))
+
+while True:
+    entrada = input()
+
+    if entrada == "Fim":
+        break
+    expressao_total += entrada
+
+resultado_final = (expressao_total)
+
+print(resultado_final)

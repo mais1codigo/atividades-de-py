@@ -1,0 +1,14 @@
+soma = 0
+contador = 0
+
+print("Digite 10 números:")
+while contador < 10:
+    numero = int(input())
+    while numero < 0:
+        print("Por favor, digite um número inteiro positivo.")
+        numero = int(input())
+    soma += numero
+    contador += 1
+
+media = soma / 10
+print(f"A média dos valores digitados é {media:.2f}")

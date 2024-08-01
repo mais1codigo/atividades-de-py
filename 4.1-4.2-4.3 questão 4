@@ -1,0 +1,21 @@
+N = int(input("Digite a quantidade de jogos: "))
+
+vitorias = empates = derrotas = pontos = 0
+
+for jogo in range(1, N + 1): 
+    gols_galo = int(input(f"Gols do Atlético MG no jogo {jogo}: "))
+    gols_oponente = int(input(f"Gols do time oponente no jogo {jogo}: "))
+
+    if gols_galo > gols_oponente:
+        vitorias += 1
+        pontos += 3
+    elif gols_galo == gols_oponente:
+        empates += 1
+        pontos += 1
+    else:
+        derrotas += 1
+
+print(f"Vitórias: {vitorias}")
+print(f"Empates: {empates}")
+print(f"Derrotas: {derrotas}")
+print(f"Pontuação: {pontos}")
