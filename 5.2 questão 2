@@ -1,12 +1,12 @@
-import random
-import math
 
-n = int(input("Digite o valor de n: "))
 
-valores = [random.randint(0, 100) for _ in range(n)]
-soma = sum(valores)
-raiz_quadrada = math.sqrt(soma)
 
-print(f"Valores gerados: {valores}")
-print(f"Soma dos valores: {soma}")
-print(f"Raiz quadrada da soma: {raiz_quadrada}")
+
+
+def soma_quadrados(a, b):
+    return a**2 + b**2
+
+num1 = float(input())
+num2 = float(input())
+resultado = soma_quadrados(num1, num2)
+print(f"A soma dos quadrados de {num1} e {num2} é {resultado}.")

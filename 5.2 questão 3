@@ -1,0 +1,13 @@
+
+
+
+def soma_digitos(n):
+    soma = 0
+    while n > 0:
+        soma += n % 10  
+        n //= 10        
+    return soma
+
+numero = int(input())
+resultado = soma_digitos(numero)
+print(f"A soma dos dígitos de {numero} é {resultado}.")

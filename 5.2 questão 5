@@ -1,0 +1,56 @@
+
+
+import math
+
+def calcula_perimetro_triangulo(lado1, lado2, lado3):
+   
+    return lado1 + lado2 + lado3
+
+def calcula_perimetro_circulo(raio):
+    
+    return 2 * math.pi * raio
+
+def calcula_perimetro_retangulo(lado1, lado2=None):
+    
+    if lado2 is None:
+        lado2 = lado1
+    return 2 * (lado1 + lado2)
+
+def main():
+    while True:
+        print("\nMenu:")
+        print("1. Calcular o perímetro de um triângulo")
+        print("2. Calcular o perímetro de um círculo")
+        print("3. Calcular o perímetro de um retângulo ou quadrado")
+        print("4. Sair")
+        
+        opcao = int(input("Escolha uma opção: "))
+        
+        if opcao == 1:
+            lado1 = int(input("Digite o comprimento do primeiro lado do triângulo: "))
+            lado2 = int(input("Digite o comprimento do segundo lado do triângulo: "))
+            lado3 = int(input("Digite o comprimento do terceiro lado do triângulo: "))
+            perimetro = calcula_perimetro_triangulo(lado1, lado2, lado3)
+            print(f"O perímetro do triângulo é: {perimetro}")
+        
+        elif opcao == 2:
+            raio = int(input("Digite o raio do círculo: "))
+            perimetro = calcula_perimetro_circulo(raio)
+            print(f"O perímetro do círculo é: {perimetro}")
+        
+        elif opcao == 3:
+            lado1 = int(input("Digite o comprimento do primeiro lado do retângulo (ou lado do quadrado): "))
+            lado2 = input("Digite o comprimento do segundo lado do retângulo (pressione Enter se for um quadrado): ")
+            lado2 = int(lado2) if lado2 else None
+            perimetro = calcula_perimetro_retangulo(lado1, lado2)
+            print(f"O perímetro do retângulo (ou quadrado) é: {perimetro}")
+        
+        elif opcao == 4:
+            print("Saindo...")
+            break
+        
+        else:
+            print("Opção inválida. Tente novamente.")
+
+if __name__ == "__main__":
+    main()

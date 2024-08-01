@@ -1,0 +1,24 @@
+def inverteValor(numero):
+    
+    invertido = 0
+    while numero != 0:
+        digito = numero % 10
+        invertido = invertido * 10 + digito
+        numero = numero // 10
+    return invertido
+
+def verificaInverso(original, invertido):
+    
+    return (original % 2 == invertido % 2)
+
+def main():
+    valor = int(input("Digite um valor inteiro: "))
+    valor_invertido = inverteValor(valor)
+    sao_iguais_paridade = verificaInverso(valor, valor_invertido)
+    
+    print(f"Valor original: {valor}")
+    print(f"Valor invertido: {valor_invertido}")
+    print(f"Ambos são igualmente par ou igualmente ímpar: {sao_iguais_paridade}")
+
+if __name__ == "__main__":
+    main()
