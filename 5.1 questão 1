@@ -1,0 +1,11 @@
+
+
+numero1 = float(input())
+numero2 = float(input())
+
+def diferença_absoluta (numero1, numero2):
+    valor = (numero1 - numero2)
+    return valor
+
+resultado = diferença_absoluta(numero1, numero2)
+print(resultado)

@@ -1,0 +1,21 @@
+import emoji
+#eu instalei no pront de comando e não sei mais como usar no vs
+
+emojis_disponiveis = {
+    "❤️": ":red_heart:",
+    "👍": ":thumbs_up:",
+    "🤔": ":thinking_face:",
+    "🥳": ":partying_face:"
+    }
+
+print("Emojis disponíveis:")
+for visual, codificacao in emojis_disponiveis.items():
+    print(f"{visual} - {codificacao}")
+
+frase = input("\nDigite uma frase e ela será emojizada:\n")
+
+frase_emojizada = emoji.emojize(frase, use_aliases=True)
+
+print("\nFrase emojizada:")
+print(frase_emojizada)
+
