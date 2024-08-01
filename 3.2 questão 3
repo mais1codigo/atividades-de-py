@@ -1,0 +1,10 @@
+idade = int(input("Digite sua idade: "))
+jogos = str(input(" você ja jogou plo menos 3 jogos? "))
+vitorias = str(input(" você ja ganhou pelo menos 1 jogo? "))
+
+if idade > 16 and idade < 18:
+    print("true")
+    print(jogos)
+    print (vitorias)
+else:
+    print("false")
